@@ -57,3 +57,5 @@ public class prog
 		
 		if(k==0)
 System.out.println("Your application is accepted and is under study!");
+}}
+	
