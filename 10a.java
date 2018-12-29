@@ -3,10 +3,7 @@ package AdvMath;
 public class Trig 
 {
 	double x,total;
-
-
-	
-	public void cal(int m)
+	public void cal(double m)
 	{
 		x = Math.toRadians(m);
 		total = Math.sin(x)+ Math.cos(x)+ Math.tan(x);
@@ -54,18 +51,24 @@ public class Pythagorean
 }
 
 //main
-
+import java.util.Scanner;
 import AdvMath.*;
-
 public class prog
 {
 	public static void main(String args[])
 	{
+		double angle=0.0;
+		int limit=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Angle: ");
+		angle=sc.nextDouble();
 		Trig t=new Trig();
-		t.cal(45.0);
+		t.cal(angle);
 		t.display();
 		
 		Pythagorean pt = new Pythagorean();
-		pt.triplets(15);
+		System.out.println("Enter Limit: ");
+		limit=sc.nextInt();
+		pt.triplets(limit);
 	}
 }
