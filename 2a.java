@@ -19,7 +19,7 @@ public class stud_details
 	
 	public void display()
 	{
-		System.out.println(" USN : "+ USN+"\n Department name :"+ Dept_name + "\n Grade 1 "+g1+"\n Grade 2 "+g2+"\n Grade 3 "+g3+"\n SGPA: "+sgpa);
+		System.out.println(" USN: "+ USN+"\n Department name: "+ Dept_name + "\n Grade 1: "+g1+"\n Grade 2: "+g2+"\n Grade 3: "+g3+"\n SGPA: "+sgpa);
 	}
 
 }
@@ -40,7 +40,7 @@ public class staff_details {
 	
 	public void display()
 	{
-		System.out.println("\n Staffid:  "+Staffid+"\n StaffName "+StaffName+"\n Designation "+ Designation +"\n Subject handled "+subjects);
+		System.out.println("\n Staffid:  "+Staffid+"\n StaffName: "+StaffName+"\n Designation: "+ Designation +"\n Subject handled: "+subjects);
 	}
 
 }
@@ -49,14 +49,38 @@ public class staff_details {
 
 import Student.*;
 import Staff.*;
+import java.util.Scanner;
 public class prog
 {
 	public static void main(String []args) 
 	{
-		stud_details s1 = new stud_details("1MS15CS148","CSE","S","A","S",9.70);
+		String usn="";String dept="";String g1="";String g2="";String g3="";double sgpa=0.0;
+		String sid="";String sname="";String des="";String subj="";
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter USN: ");
+		usn=sc.next();
+		System.out.println("Enter Dept: ");
+		dept=sc.next();
+		System.out.println("Enter Grade 1: ");
+		g1=sc.next();
+		System.out.println("Enter Grade 2: ");
+		g2=sc.next();
+		System.out.println("Enter Grade 3: ");
+		g3=sc.next();
+		System.out.println("Enter SGPA: ");
+		sgpa=sc.nextDouble();
+		stud_details s1 = new stud_details(usn,dept,g1,g2,g3,sgpa);
+		System.out.println("Enter StaffID: ");
+		sid=sc.next();
+		System.out.println("Enter StaffName: ");
+		sname=sc.next();
+		System.out.println("Enter Designation: ");
+		des=sc.next();
+		System.out.println("Enter Subject Handled: ");
+		subj=sc.next();
+		staff_details s2 = new staff_details(sid,sname,des,subj);
 		s1.display();
-		
-		staff_details s2 = new staff_details("TE001","ABC","HOD", "Mathematics");
 		s2.display();
 	}
 }
+
