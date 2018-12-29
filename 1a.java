@@ -30,7 +30,7 @@ class check implements exam{
 	
 	@Override
 	public String getValue() {
-		return ("\nStudent Number: " +sno +"\nStudent Name: " +sname +"\nClass: " +clas +"\nAttendace: " +attendance + "\nAttendace Percentage: "+perc );
+		return ("\nStudent Number: " +sno +"\nStudent Name: " +sname +"\nClass: " +clas +"\nAttendance: " +attendance + "\nAttendance Percentage: "+perc );
 	}
 
 	@Override
@@ -67,7 +67,7 @@ public class prog {
 		sname1=sc.next();
 		System.out.println("Enter Class: ");
 		clas1=sc.next();
-		System.out.println("Enter Att: ");
+		System.out.println("Enter Attendance: ");
 		attendance1=sc.nextFloat();
 		check s1 = new check(sno1,sname1,clas1,attendance1);
 		s1.calattendance();
