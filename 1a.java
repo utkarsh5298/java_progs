@@ -1,5 +1,5 @@
 //attendence variable store no of class attended out of 54
-
+import java.util.Scanner;
 interface student{
 	String getValue();
 }
@@ -56,19 +56,31 @@ class check implements exam{
 public class prog {
 	
 	public static void main(String [] args) {
-		
-		check s1 = new check(1,"A","5B",23);
+		int sno1=0;
+		String sname1=" ";
+		String clas1=" ";
+		float attendance1=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number: ");
+		sno1=sc.nextInt();
+		System.out.println("Enter Name: ");
+		sname1=sc.next();
+		System.out.println("Enter Class: ");
+		clas1=sc.next();
+		System.out.println("Enter Att: ");
+		attendance1=sc.nextFloat();
+		check s1 = new check(sno1,sname1,clas1,attendance1);
 		s1.calattendance();
 		if(s1.eligible())
 		{
-			System.out.print("Eligible!");
 			System.out.println(s1.getValue());
+			System.out.print("Eligible!");
 		}
 		
 		else
 		{
-			System.out.print("Not eligible!");
 			System.out.println(s1.getValue());
+			System.out.print("Not eligible!");
 			
 		}
 	}
