@@ -12,7 +12,7 @@ public class prog
 		s += sc.nextLine();
 
 		s=s.toUpperCase();
-		//System.out.println(s);
+		System.out.println(s);
 		s=s.replaceAll(" ", "");
 		//System.out.println(s);
 
