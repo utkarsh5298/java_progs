@@ -12,7 +12,7 @@ class Record
 	
 	void readvalues()
 	{
-		for(int i=0;i<10;i++) 
+		for(int i=0;i<=10;i++) 
 		{
 			Scanner sc = new Scanner(System.in);  
 			System.out.println("Enter your name: ");  
@@ -25,7 +25,7 @@ class Record
 	
 	void display()
 	{
-		for(int i=0;i<10;i++) 
+		for(int i=0;i<=10;i++) 
 		{
 System.out.println("\n Name: " + name[i] + "\n Rank: " + rnk[i]);  
 		}
@@ -46,7 +46,7 @@ class Rank extends Record
 	void highest()
 	{
 		int max=999;
-		for(int i=0;i<10;i++) 
+		for(int i=0;i<=10;i++) 
 		{
 			if(max>=rnk[i])
 			{
