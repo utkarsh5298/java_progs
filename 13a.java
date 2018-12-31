@@ -41,8 +41,8 @@ class ReserveBus extends Reservation{
     }
 
     public int getAvailSeats() {
-        nost = nost-seat;
-        return (nost);     }
+        nosb = nosb-seat;
+        return (nosb);     }
 
 }
 public class Q13A {
