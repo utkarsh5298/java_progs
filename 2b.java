@@ -23,9 +23,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
 @WebServlet("/Police")
-public class Police extends HttpServlet {
-	
-	private static final long serialVersionUID = 1L;     
+public class Police extends HttpServlet {   
 	
 	public Police() {
 		super();
