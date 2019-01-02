@@ -9,13 +9,9 @@ public class prog
 
 		System.out.println("Enter your string:"); 
 		Scanner sc = new Scanner(System.in);
-		s += sc.nextLine();
-
+		s=sc.nextLine();
 		s=s.toUpperCase();
 		System.out.println(s);
-		s=s.replaceAll(" ", "");
-		//System.out.println(s);
-
 		for(int i=0;i<s.length()-1;i++) 
 			if(s.charAt(i) == s.charAt(i+1))
 				count+=1;
