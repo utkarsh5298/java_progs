@@ -6,7 +6,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action = "ticket.jsp" method = post >
+	<form action = "ticket.jsp" method = "post" >
 		Enter Name : <input type ="text" name = "name" > <br>
 		Enter Age :  <input type ="text" name = "age" > <br>
 		<button type = "Submit"> Submit </button>
