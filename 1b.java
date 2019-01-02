@@ -1,36 +1,29 @@
 import java.sql.*;
-import java.io.*;
 
-public class prog
-{
-	public static void main(String []args) 
-	{
-		try 
-		{
+public class Q1b {
 
-Class.forName("com.mysql.jdbc.Driver");
-Connection con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","");
-Statement st = (Statement)con.createStatement();
-			
-ResultSet rs = st.executeQuery(" select No_of_Employee from Department where Name='CSE' ");
+	public static void main(String[] args) {
+
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root","");
+			Statement st = con.createStatement();
+			st.execute("Create table department (Dept_id int primary key,Name varchar(255),Year_Est varchar(5),number_emp int)");
+			st.execute("insert into department values(1,'CSE','2010',10),(2,'ISE','2010',8)");
+			ResultSet rs = st.executeQuery(" select number_emp from Department where Name='CSE' ");
 			rs.next();
-	
-System.out.println(" No of employees in cse department: "+ rs.getInt("No_of_Employee"));
-
-rs =st.executeQuery("select Name,Dept_id from department where Year_Established='2010'");
+			System.out.println(" No of employees in cse department: "+ rs.getInt("number_emp"));
+			rs =st.executeQuery("select Name,Dept_id from department where Year_Est='2010'");
 			while(rs.next())
 			{
 				String name=rs.getString("Name");
 				int did=rs.getInt("Dept_id");
-	System.out.println("\n Name: "+name+"\n Dept_id: "+did );
+				System.out.println("\n Name: "+name+"\n Dept_id: "+did );
 			}
 			st.close();
 			con.close();
-
 		}
-
-		catch (Exception e)
-		{
+		catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
