@@ -9,7 +9,7 @@
 		Enter name:<input type="text" name="name"><br>
 		Enter panid :<input type="text" name="panid"><br>
 		Enter password:<input type="text" name="password"><br>
-		<button type="submit">Submit</button><br>
+		<button type="submit">Submit</button>
 		<button type="reset">Cancel</button>
 	</form> 
 </body>
