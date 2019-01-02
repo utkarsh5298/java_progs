@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Police Station </title>
+<title>Initials</title>
 </head>
 <body>
     <form action = "Initials" method = "post" >
