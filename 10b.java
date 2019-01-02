@@ -30,6 +30,13 @@ RequestDispatcher rd=request.getRequestDispatcher("Cookiewrite");
 
 
 //cookie write
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
 {
@@ -49,7 +56,7 @@ for(int i=0; i<cookies.length; i++)
 	value = cookies[i].getValue();
 	if(name.equals("admin") && value.equals(pid))
 	{
-		out.println("Welcome "+ n1);
+		out.println("Welcome Back"+ n1);
 		c=1;
 		break;	
 	}
