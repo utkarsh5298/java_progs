@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action = 'gradetest.jsp' method = post >
+	<form action = "gradetest.jsp" method = "post" >
 		Enter Your Marks :<input type="text" name="marks">
 		<button type="submit" >Submit </button>
 	</form>
