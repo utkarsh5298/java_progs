@@ -15,8 +15,8 @@ Enter Price  <input type ="text" name = "price" > <br>
 
 //book.jsp
 <body>
-<%@ page import="java.sql.*" %>
-<%@ page import = "javax.servlet.RequestDispatcher" %>
+<%@ page import="java.sql.*"%>
+<%@ page import ="javax.servlet.RequestDispatcher"%>
 <%
 int no = Integer.parseInt(request.getParameter("bno"));
 String title = request.getParameter("title");
