@@ -22,8 +22,6 @@ import javax.servlet.http.*;
 @WebServlet("/Initials")
 public class Initials extends HttpServlet {
 	
-	private static final long serialVersionUID = 1L;
-	
 	public Initials() { 
 		super(); 
 	}
