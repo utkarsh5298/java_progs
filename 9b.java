@@ -1,5 +1,5 @@
 import java.sql.*;
-import java.util.Scanner;
+import java.util.*;
 public class qb9 {
 
 	public static void main(String[] args) {
