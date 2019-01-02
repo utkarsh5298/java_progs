@@ -57,7 +57,7 @@ public class Police extends HttpServlet {
 				ResultSet rs = st.executeQuery(sql);
 				while (rs.next()) {
 					out.println("Area: "+rs.getString("area"));
-					out.println("Area: "+rs.getString("phone"));
+					out.println("Phone: "+rs.getString("phone"));
 				}
 			}
 		}
