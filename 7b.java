@@ -59,7 +59,7 @@ Enter Title :  <input type ="text" name = "title" > <br>
 </body>
 
 //displaybooks.jsp
-<%@ page import = "java.sql.*" %>
+<%@ page import ="java.sql.*"%>
 <%
 try
 {
