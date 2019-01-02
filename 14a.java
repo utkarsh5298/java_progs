@@ -16,7 +16,7 @@ public class prog extends Applet implements MouseMotionListener,MouseListener
 
 	@Override
 	public void mouseDragged(MouseEvent e) {
-
+		showStatus("mouse pressed");
 		x=startx;
 		y=starty;
 		height=e.getX()-startx;
@@ -41,7 +41,7 @@ public class prog extends Applet implements MouseMotionListener,MouseListener
 	{
 		startx=e.getX();
 		starty=e.getY();
-		showStatus("mouse pressed");
+		showStatus("mouse released");
 
 	}
 
