@@ -57,7 +57,7 @@
 </body>
 </html>
 
-//form2.jsp
+//pol2.html
 
 <!DOCTYPE html>
 <html>
