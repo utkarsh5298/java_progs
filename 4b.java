@@ -29,6 +29,7 @@
 
 //sessiontrace.jsp
 <%
+	HttpSession s=request.getSession(false);
 	if(session!=null) {
 		String name=(String)session.getAttribute("user");
 		out.println("Hello "+ name +", Welcome");
