@@ -27,7 +27,7 @@ rd.include(request,response);
 //counter.jsp
 
 <body>
-<%@ page import = "java.io.*,java.util.*" %>
+<%@ page import ="java.io.*,java.util.*"%>
 <%
 
 Integer hitsCount = (Integer)application.getAttribute("hitCounter");
