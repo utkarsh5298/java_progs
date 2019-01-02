@@ -6,7 +6,7 @@
 </head>
 <body>
     <form action = "Police" method = "post" >
-        <input type = "radio" name = "n" value = 1 checked > Area <br>
+        <input type = "radio" name = "n" value = 1 > Area <br>
         <input type = "radio" name = "n" value = 2 > Phone Number  <br>
         Enter area/phone number  : <input type = "text" name = "ap" > <br>
         <button type = "Submit"  > Submit </button>
