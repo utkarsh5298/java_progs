@@ -36,7 +36,7 @@ public class Cookieread extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	String panid=request.getParameter("panid");
-    	Cookie mycookie=new Cookie("panid",panid);
+    	Cookie mycookie=new Cookie("admin",panid);
     	mycookie.setMaxAge(3600);
     	response.addCookie(mycookie);
     	RequestDispatcher rd=request.getRequestDispatcher("Cookiewrite");
